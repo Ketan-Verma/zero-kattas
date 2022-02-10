@@ -1,0 +1,70 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: #fff;
+}
+.board{
+    /* width:30em ; */
+    /* height:30em ; */
+    width: fit-content;
+    /* border: dotted; */
+    display: grid;
+    gap: 0.11em;
+    grid-template-columns: auto auto auto ;
+}
+.card{
+    cursor: pointer;
+    width:100px ;
+    height:100px ;
+    padding: 0;
+    margin: 0;
+    background-color:#ffff33;
+}
+.card:hover{
+    border: #006fff  solid;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.resetbtn{
+    padding: 2em;
+}
+.resetbtn button {
+    
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+.resetbtn    button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+.resetbtn    button:active {
+    transform: translateY(-1px);
+   }
+.turn{
+    margin: 1em;
+}
+#turnspan{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#winner{
+    text-transform: capitalize;
+}
+#winner b{
+    color: #006fff;
+}
