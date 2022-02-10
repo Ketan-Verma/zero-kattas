@@ -91,7 +91,7 @@ function reset(){
         " "," "," ",];
         for (let i = 1; i < 10; i++) {
             document.getElementById(i).innerHTML="";
-            document.getElementById(i).style.backgroundColor="aliceblue";
+            document.getElementById(i).style.backgroundColor="#ffff33";
             document.getElementById("turnspan").innerHTML="X";
             document.getElementById("turn").innerHTML="Your Turn : ";
             document.getElementById("winner").innerHTML="";
